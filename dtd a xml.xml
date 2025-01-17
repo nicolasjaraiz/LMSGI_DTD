@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "cataleg.dtd">
+<catalog>
+    <llista_actors>
+        <actor id="A1">
+            <nom>Nom Actor 1</nom>
+            <edat>40</edat>
+        </actor>
+        <actor id="A2">
+            <nom>Nom Actor 2</nom>
+            <edat>35</edat>
+        </actor>
+    </llista_actors>
+
+    <llista_pelicules>
+        <pelicula id="P1">
+            <titol idioma="ca">Títol de la Pel·lícula 1</titol>
+            <director>Nom Director 1</director>
+            <any>2023</any>
+            <actors>
+                <actor_ref ref="A1"/>
+                <actor_ref ref="A2"/>
+            </actors>
+        </pelicula>
+        <pelicula id="P2">
+            <titol idioma="ca">Títol de la Pel·lícula 2</titol>
+            <director>Nom Director 2</director>
+            <any>2022</any>
+            <actors>
+                <actor_ref ref="A1"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="P1"/>
+        <recomanacio ref="P2"/>
+    </llista_recomanacions_pelicules>
+</catalog>
